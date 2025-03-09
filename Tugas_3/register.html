@@ -1,0 +1,70 @@
+<!-- Gilang Rizki Pratama -->
+<!-- 2312170 -->
+<!-- RPL 4C -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register TalkEasy</title>
+    <link rel="stylesheet" href="/Tugas_2/styles/register.css" />
+</head>
+<body>
+    <h2>Register TalkEasy</h2>
+    <form action="homepage.html" method="get">
+        <table>
+            <tr>
+                <td><label for="fullname">Nama Lengkap</label></td>
+                <td>:</td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Tanggal Lahir</label></td>
+                <td>:</td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="range">Usia</label></td>
+                <td>:</td>
+                <td><input type="range" id="range" name="range" min="18" max="100" required></td>
+            </tr>
+            <tr>
+                <td><label for="color">Pilih Warna</label></td>
+                <td>:</td>
+                <td><input type="color" id="color" name="color" required></td>
+            </tr>
+            <tr>
+                <td><label for="file">Upload Foto</label></td>
+                <td>:</td>
+                <td><input type="file" id="file" name="file" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Pria</option>
+                        <option value="female">Wanita</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+    <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+</body>
+</html>
