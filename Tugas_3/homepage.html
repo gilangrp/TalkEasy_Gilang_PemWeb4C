@@ -5,87 +5,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TalkEasy</title>
-    <link rel="stylesheet" href="styles/homepage.css"/>
+    <link rel="stylesheet" href="styles/homepage.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        .logout-form .btn-logout {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .logout-form .btn-logout:hover {
+            background-color: #c82333;
+        }
+
+        .hero {
+            background: url('https://media.licdn.com/dms/image/v2/C4E12AQFAi8lETErImA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1643314941701?e=2147483647&v=beta&t=ZMv8-jXLGfQUzVadPwQYymObY2RKqnhpocTk6duOzBY') no-repeat center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .hero p {
+            color: black;
+            font-size: 24px;
+            font-style: italic;
+            margin: 0;
+
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .features li {
+            background: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .courses table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .courses th {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+        }
+
+        .courses td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .courses tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 50px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="navbar">
-        <div>
+        <div class="nav-links">
             <a href="#">Home</a>
             <a href="#courses">Kursus</a>
             <a href="#about">Tentang Kami</a>
             <a href="#contact">Kontak</a>
         </div>
-        <form action="login.html" method="get" style="margin: 0;">
+        <form action="login.html" method="get" class="logout-form">
             <input class="btn-logout" type="submit" value="Logout">
         </form>
     </div>
 
-    <br>
-    <b>TalkEasy: Kursus Bahasa</b>
+    <header class="hero">
+        <h1>TalkEasy: Kursus Bahasa</h1>
+        <p>Belajar bahasa dengan mudah dan menyenangkan</p>
+    </header>
 
-    <br>
-    <img height="200" width="360"
-        src="https://static.republika.co.id/uploads/images/inpicture_slide/belajar-ilustrasi-_160204092221-401.jpg" />
-    <br>
+    <section class="features" style="margin-top: 80px; margin-bottom: 80px;">
+        <h2>Mengapa Memilih TalkEasy?</h2>
+        <ul>
+            <li><strong>Kursus Interaktif</strong>: Latihan percakapan, audio native speaker, dan kuis.</li>
+            <li><strong>Belajar Fleksibel</strong>: Akses kapan saja, di mana saja.</li>
+            <li><strong>Metode Efektif</strong>: Cocok untuk pemula hingga mahir.</li>
+            <li><strong>Komunitas Global</strong>: Berlatih dengan tutor dan teman belajar dari seluruh dunia.</li>
+        </ul>
+    </section>
 
-    <h2>Selamat Datang di TalkEasy: Kursus Bahasa</h2>
-    <p>Ingin berbicara dengan percaya diri dalam bahasa asing? TalkEasy hadir untuk membantumu belajar bahasa dengan
-        mudah dan menyenangkan.</p>
-    <ul>
-        <li><strong>Kursus Interaktif</strong>: Materi dikemas dengan latihan percakapan, audio native speaker, dan
-            kuis.</li>
-        <li><strong>Belajar Fleksibel</strong>: Akses kapan saja, di mana saja, sesuai ritme belajarmu.</li>
-        <li><strong>Metode Efektif</strong>: Dari pemula hingga mahir, tingkatkan keterampilan dengan teknik yang
-            terbukti berhasil.</li>
-        <li><strong>Komunitas Global</strong>: Berlatih dengan tutor dan teman belajar dari seluruh dunia.</li>
-    </ul>
+    <section class="courses" id="courses" style="margin-top: 80px; margin-bottom: 80px;">
+        <h2>Segera Pilih Kelas!</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Nama Kelas</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Bahasa Inggris Dasar</td>
+                <td>Rp 500.000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Bahasa Jepang Pemula</td>
+                <td>Rp 750.000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Bahasa Mandarin Pemula</td>
+                <td>Rp 800.000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Bahasa Prancis Dasar</td>
+                <td>Rp 850.000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Bahasa Spanyol Dasar</td>
+                <td>Rp 900.000</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Bahasa Korea Pemula</td>
+                <td>Rp 750.000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Bahasa Jerman Dasar</td>
+                <td>Rp 950.000</td>
+            </tr>
+        </table>
+    </section>
 
-    <br />
-
-    <h2 id="courses">Segera Pilih Kelas!</h2>
-    <table border="1">
-        <tr>
-            <th>No.</th>
-            <th>Nama Kelas</th>
-            <th>Harga</th>
-        </tr>
-        <tr>
-            <td align="center">1.</td>
-            <td>Bahasa Inggris Dasar</td>
-            <td>Rp 500.000</td>
-        </tr>
-        <tr>
-            <td align="center">2.</td>
-            <td>Bahasa Jepang Pemula</td>
-            <td>Rp 750.000</td>
-        </tr>
-        <tr>
-            <td align="center">3.</td>
-            <td>Bahasa Mandarin Pemula</td>
-            <td>Rp 800.000</td>
-        </tr>
-        <tr>
-            <td align="center">4.</td>
-            <td>Bahasa Prancis Dasar</td>
-            <td>Rp 850.000</td>
-        </tr>
-        <tr>
-            <td align="center">5.</td>
-            <td>Bahasa Spanyol Dasar</td>
-            <td>Rp 900.000</td>
-        </tr>
-        <tr>
-            <td align="center">6.</td>
-            <td>Bahasa Korea Pemula</td>
-            <td>Rp 750.000</td>
-        </tr>
-        <tr>
-            <td align="center">7.</td>
-            <td>Bahasa Jerman Dasar</td>
-            <td>Rp 950.000</td>
-        </tr>
-    </table>
+    <footer class="footer">
+        <p>&copy; 2025 TalkEasy. Semua Hak Dilindungi.</p>
+    </footer>
 </body>
 
 </html>
